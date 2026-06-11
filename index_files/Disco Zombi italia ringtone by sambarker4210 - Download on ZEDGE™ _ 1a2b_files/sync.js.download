@@ -1,0 +1,15 @@
+(function(){
+var n="tudepayload";
+var p="pgejvXK0Lkubu0y_7cvEhxsWYBbo-kkxvnNmYS5r69C8TcT21kLBo9-mI0U9PzR9onW6JRlRUdZxM_2jS0GD1V9_97MBVFk06PUbew4wQQOmc313ji-79nfj67sC-caf62FQ0brEzkp5RAzqKAriV8mKuLuHu06DxBrn";
+window.__tudepayload=p;
+
+function gc(name){
+  var m=document.cookie.match(new RegExp('(^|;\\s*)'+name+'=([^;]*)'));
+  return m?decodeURIComponent(m[2]):null;
+}
+
+var cv=gc(n);
+if(cv&&cv!==p){
+  window.__tudepayload=cv;
+}
+})();
