@@ -1,0 +1,236 @@
+var a; //declaration 
+a=10; //initialization
+var a =10; //Re - declaration and Re - itnitialization
+console.log(a);
+let b; //declaration 
+b =20;//intialization
+b=30;//Re - intialization
+console.log(b);
+const c = 30; // declaration and intialization 
+console.log(c);
+console.log(a+b);
+console.log(10+20);
+var nu=10;
+var str = "orange";
+var bool =true;
+var undef;
+var nll= null;
+var symbol = Symbol('il');
+var bigInt= 123456789;
+var arr=[1,2,3,4,5]
+var obj ={
+    name:"faizal"
+}
+console.log(typeof num);
+console.log(typeof str);
+console.log(typeof bool);
+console.log(typeof undef);
+console.log(typeof nill);
+console.log(typeof symbol);
+console.log(typeof bigInt);
+console.log(typeof arr);
+console.log(typeof obj);
+// Arithmetic operator
+var x= 10;
+var y="20";
+console.log(x+y);
+console.log(x-y);
+console.log(x*y);
+console.log(x/y);
+console.log(x%y);
+console.log(x**y);
+// conditional operator(>,>=,<=,==,!=)
+var x=1;
+var y="2";
+console.log(x>y);
+console.log(x>=y);
+console.log(x<y);
+console.log(x<=y);
+console.log(x==y);
+console.log(x!=y);
+console.log(x===y);
+console.log(x!==y);
+//logical operator(&&,||,!)
+console.log(true && true);
+console.log(true && false);
+console.log(false && true);
+console.log(false && false);
+
+console.log(true|| true);
+console.log(true || false);
+console.log(false || true);
+console.log(false || false);
+
+console.log(!true);
+console.log(!false);
+//assignment operator(=,+=,-=,%=,*=,**=)
+var x=1;
+var y=2;
+console.log(x);
+x+y;
+console.log(x);
+var x=10;
+var sum=0;
+for(let i=1;i<=x;i++){
+    sum+=i;
+}
+console.log(sum);
+//conditional statement
+//if(condition){
+//  //statement
+//}
+ var x=10;
+ if(x%2===0){
+    console.log("Even")
+ }
+ //{else{
+//    //statment
+//}
+if(x%2===0){
+    console.log("even");
+}
+else{
+    console.log("odd")
+} 
+var mark =30;
+if (mark>=90){
+    console.log("O grade");
+}
+else if(mark>80){
+    console.log("A grade");
+}
+else if(mark>70){
+    console.log("A+ grade");
+}
+else if (mark>60){
+    console.log("B grade");
+}
+else if (mark>=35){
+    console.log( "pass");
+}
+else{
+    console.log("fail");
+} 
+//terinary operator
+var x=2;
+// condition ? true statement : false statement
+var result = x%2===0 ? "even" : "odd";
+console.log(result)
+var mark =90;
+var grade =mark>=90 ? "O grade":
+           mark>=80 ? "A+ grade":
+           mark>=70 ? "A grade":
+           mark>=60 ? "B+ grade":
+           mark>=50 ? "B grade":
+           mark>=35 ? "pass" : "fail";
+
+console.log(grade);
+var day = 8;
+switch(day){
+    case 1:{
+        console.log("sunday");
+        break;
+    }
+    case 2:{
+        console.log("monday");
+        break;
+    }
+    case 3:{
+        console.log("tuesday");
+        break;
+    }
+    case 4:{
+        console.log("wednesday");
+        break;
+    }
+    case 5:{
+        console.log("thursday");
+        break;
+    }
+    case 6:{
+        console.log("friday");
+        break;
+    }
+    case 7:{
+        console.log("saturday");
+        break;
+    }
+    default:{
+        console.log("invaild input");
+    }
+}
+// for (intialization); condition ; increment/decrement){
+//statement
+//}
+    for(let i=1;i<=10;i++){
+        console.log(i);
+    }
+    //while(condoition){
+    //statement 
+    //}
+    var num = 10246;
+    var digit = 0;
+    while(num>0){
+        digit++;
+        num=Math.floor(num/10);
+    }
+    var x=1;
+    console.log(x+y);
+    console.log(++x);
+    var x=1;
+    console.log(x--);
+    console.log(--x);
+//do{
+//   //statement
+//}while(condition);
+do{
+    console.log("Do...while");
+}while(false);
+
+while(false){
+    console.log("while example");
+}
+for(let i=1;i<=10;i++){
+    // if(i>5){
+    //    break;
+    //    }
+    if(i==5){
+        continue;
+    }
+    console.log(i);
+}
+//console.log(1);
+//}
+function add (){
+    console.log(10+20);
+}
+add();
+add();
+add();
+function add(a,b){
+    console.log(a+b);
+}
+add(10,20);
+add(15,25);
+add(20);
+add();
+var add = ()=>{
+    console.log(10+20);
+}
+add();
+var sum = () =>{
+    console.log("Arrow function");
+}
+sum();
+var arr = [1,2,3,4,5];
+var square = arr.map((val)=>(val**2))
+console.log(square)
+var even =arr.filter((val)=>(val%2===0));
+console.log(even);
+var sum=arr.reduce((total,val)=>(total+val.o));
+var square =arr.map((val)=>(val**2));
+console.log(square);
+var even=arr.filter((val)=>(val1%2===0));
+console.log(even);
+//reduce((prev,curr)=>(calucation),intiavalue
+var sum=arr.reduce/((total,val)=>(total+val),0);
